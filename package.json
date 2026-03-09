@@ -1,0 +1,47 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "list all extension for cicool codeigniter",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/api/index.ts",
+    "worker": "ts-node src/workers/renderWorker.ts",
+    "build": "tsc",
+    "remotion:preview": "remotion preview src/video/index.tsx",
+    "remotion:render": "remotion render src/video/index.tsx QuranVideo out.mp4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cicoolbuilder/cc-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cicoolbuilder/cc-extension/issues"
+  },
+  "homepage": "https://github.com/cicoolbuilder/cc-extension#readme",
+  "dependencies": {
+    "@remotion/cli": "^4.0.434",
+    "@remotion/renderer": "^4.0.434",
+    "axios": "^1.13.6",
+    "bullmq": "^5.70.4",
+    "express": "^5.2.1",
+    "ioredis": "^5.10.0",
+    "lucide-react": "^0.577.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.434",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.5",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/uuid": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
