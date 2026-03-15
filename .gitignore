@@ -1,0 +1,6 @@
+node_modules
+dist
+public/videos/*.mp4
+.env
+*.log
+*.rdb
